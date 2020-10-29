@@ -3,6 +3,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class MultipleCustomer {
+	//Adding multiple customers//
 	Scanner sc = new Scanner(System.in;
 	ArrayList<String> Customer = new ArrayList<String>();
 	
