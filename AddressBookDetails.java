@@ -2,7 +2,9 @@
 import java.util.*;
 
 public class AddressBookDetails {
+	//user details will be taken using hashmap//
 	Scanner sc = new Scanner(System.in);
+	//two different hashmap one for string input other for integer//
 	HashMap<String, String> ShowString = new HashMap<String, String>();
 	HashMap<String, Integer> ShowInt = new HashMap<>();
 	
@@ -20,6 +22,9 @@ public class AddressBookDetails {
 	int zip = sc.nextInt();
 	System.out.println("enter phoneNo:");
 	int PhoneNo = sc.nextInt();
+	System.out.println("enter Email:");
+	String Email = sc.next();
+	//using put value is given from key to elements
 	ShowString.put("FirstName", firstName);
 	ShowString.put("LastName", lastName);
 	ShowString.put("Address", address);
@@ -27,10 +32,13 @@ public class AddressBookDetails {
 	ShowString.put("State", state);
 	ShowInt.put("Zip", zip);
 	ShowInt.put("PhoneNumber", PhoneNo);
-	ShowString.put("Email", "G@daf");
+	ShowString.put("Email", Email);
 	
+	//output//
 	System.out.println(ShowString);
 	System.out.println(ShowInt);
+	
+	//scanner closed//
 	sc.close();
 
 }
