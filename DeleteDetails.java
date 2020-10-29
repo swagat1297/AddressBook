@@ -1,31 +1,33 @@
 import java.util.*
 public class DeleteDetails {
-
+	//to delete details//
 	Scanner Remove = new Scanner(System.in);
 	HashMap<String, String> ShowString = new HashMap<String, String>();
 	HashMap<String, Integer> ShowInt = new HashMap<>();
 	System.out.println("Select option to remove\n 1.First name\n 2.Lastname\n"
 			+ "3.Address\n 4.city\n 5.state\n 6.Zip\n 7.PhoneNo");
+	//user option taken//		
 	int RemoveOption = Remove.nextInt();
-	
+	//details are deleted using remove//
 	switch(RemoveOption) {
 			case 1:ShowString.remove( "FirstName");
-				   break;
+			       break;
 			case 2:ShowString.remove( "LastName");
 			       break;
 			case 3:ShowString.remove( "Address");
-		           break;
+		               break;
 			case 4:ShowString.remove( "City");
-	               break;
+	                       break;
 			case 5:ShowString.remove( "State");
-	               break;
+	                       break;
 			case 6:ShowInt.remove( "Zip");
-	               break;
+	                       break;
 			case 7:ShowInt.remove( "PhoneNumber");
-	               break;
+	                       break;
 	         
-	         default:
+	                default:
 	        	 	 System.out.println("wrong input");
 	}
+	//scanner closed//
 	Remove.close();
 }
